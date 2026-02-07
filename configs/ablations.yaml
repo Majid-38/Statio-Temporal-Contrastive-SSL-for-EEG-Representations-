@@ -1,0 +1,16 @@
+# each run toggles: augmentation, stage-aware pairs, temporal continuity term
+ablations:
+  - id: ABL01_augOFF_stageON_tempON
+    aug_on: false
+    stage_on: true
+    temp_on: true
+
+  - id: ABL02_augON_stageOFF_tempOFF
+    aug_on: true
+    stage_on: false
+    temp_on: false
+
+  - id: ABL04_augON_stageON_tempOFF
+    aug_on: true
+    stage_on: true
+    temp_on: false
